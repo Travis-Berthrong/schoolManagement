@@ -15,7 +15,7 @@ public class PayService {
 	public List<Students> read() throws IOException {
 		
 		FileReader fread = new FileReader(
-				"C:\\Users\\tbert\\OneDrive\\Documents\\Travis_Classwork\\Java Applications\\students.csv");
+				"..\\students.csv");
 		BufferedReader br = new BufferedReader(fread);
 		String line = null;
 		String splitBy = ",";
