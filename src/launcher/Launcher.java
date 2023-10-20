@@ -20,8 +20,8 @@ public class Launcher {
 	public static void printStudents(List<Students> list) {
 		for (int i = 0; i < list.size(); i++) {
 		    Students el = list.get(i);
-		    System.out.printf("ID: %d Name: %s Age: %d Courses: %s Department: %s Year: %d Fee: %.2f Paid: %.2f%n",
-		            el.getStudId(), el.getName(), el.getAge(), el.getCourse(), el.getDepartment(),
+		    System.out.printf("ID: %s Name: %s Age: %s Courses: %s Department: %s Year: %s Fee: %.2f Paid: %s%n",
+		            el.getStudId(), el.getName(), el.getAge(), el.getCourse().toString(), el.getDepartment(),
 		            el.getYear(), el.getFee(), el.getPaid());
 		}
 	}
