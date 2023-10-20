@@ -2,15 +2,15 @@ package datamodel;
 
 public class Admin {
 	
-	private int adminId;
+	private String adminId;
 	private String username;
 	private String password;
 	
-	public int getAdminId() {
+	public String getAdminId() {
 		return adminId;
 	}
-	public void setAdminId(int adminId) {
-		this.adminId = adminId;
+	public void setAdminId(String string) {
+		this.adminId = string;
 	}
 	public String getUsername() {
 		return username;
