@@ -13,7 +13,7 @@ import datamodel.Instructors;
 import datamodel.Students;
 import datamodel.Payment;
 import datamodel.Subjects;
-import service.PayService;
+import service.StudentService;
 
 public class Launcher {
 
@@ -57,12 +57,12 @@ public class Launcher {
 		courses.add("C++");
 		student.setCourse(courses); // courses.forEach(c -> System.out.println(c));
 		
-		PayService payservice = new PayService();
+		StudentService studentservice = new StudentService();
 		try {
-			List<Students> student_list = payservice.read();
+			List<Students> student_list = studentservice.read();
 			System.out.println("Before sort: \n");
 			printStudents(student_list);
-			payservice.sortByYear(student_list);
+			studentservice.sortByYear(student_list);
 			System.out.println("\n\n After sort: \n");
 			printStudents(student_list);
 		} catch (IOException e) {

@@ -10,12 +10,12 @@ import java.util.List;
 
 import datamodel.Students;
 
-public class PayService {
+public class StudentService {
 
 	public List<Students> read() throws IOException {
 		
 		FileReader fread = new FileReader(
-				"..\\students.csv");
+				"C:\\Users\\tbert\\OneDrive\\Documents\\Travis_Classwork\\Java Applications\\students.csv");
 		BufferedReader br = new BufferedReader(fread);
 		String line = null;
 		String splitBy = ",";
