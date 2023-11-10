@@ -13,6 +13,7 @@ import datamodel.Instructors;
 import datamodel.Students;
 import datamodel.Payment;
 import datamodel.Subjects;
+import service.InstructorService;
 import service.StudentService;
 
 public class Launcher {
@@ -66,7 +67,20 @@ public class Launcher {
 			System.out.println("\n\n After sort: \n");
 			printStudents(student_list);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.print("\n\n");
+		System.out.println("Instructors: \n");
+		InstructorService instructorService = new InstructorService();
+		try {
+			List<Instructors> instructorList = instructorService.readCSV();
+			for (int i = 0; i < instructorList.size(); i++) {
+				Instructors el = instructorList.get(i);
+				System.out.printf("ID: %s Name: %s Subject: %s Phone: %s Email: %s Target Year: %s%n",
+						el.getInstructorId(), el.getName(), el.getSubject(), el.getPhoneNumber(), el.getEmail(),
+						el.getTarget_year());
+			}
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

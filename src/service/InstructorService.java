@@ -13,7 +13,7 @@ public class InstructorService {
 	public List<Instructors> readCSV() throws IOException{
 		
 		String line = null;
-		String splitBy = ", ";
+		String splitBy = ",";
 		int count = 0;
 		BufferedReader br = new BufferedReader(new FileReader
 				("C:\\Users\\tbert\\OneDrive\\Documents\\Travis_Classwork\\Java Applications\\instructors.csv"));
@@ -23,7 +23,6 @@ public class InstructorService {
 			if(count != 0) {
 				Instructors instructor = new Instructors();
 				String[] instructor_info = line.split(splitBy);
-				
 				instructor.setInstructorId(Integer.valueOf(instructor_info[0].trim()));
 				instructor.setName(instructor_info[1].trim());
 				String subject = instructor_info[2].trim();
@@ -39,6 +38,7 @@ public class InstructorService {
 			}
 			count++;
 		}
+		br.close();
 		return instructorList;
 	}
 }

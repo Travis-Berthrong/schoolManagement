@@ -7,8 +7,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\tbert\OneDrive\Documents\Travis_Classwork\Java Applications\workspace\schoolManagement"/>
 			<item value="C:\Users\tbert\OneDrive\Documents\Travis_Classwork\Java Applications\workspace"/>
+			<item value="C:\Users\tbert\OneDrive\Documents\Travis_Classwork\Java Applications\workspace\schoolManagement"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
