@@ -42,12 +42,11 @@ public class StudentService {
 				students.add(student);
 			}
 			count++;
-			System.out.println(count);
 		}
 
 		br.close();
 		fread.close();
-		
+		sortByYear(students);
 		return students;
 	}
 	
